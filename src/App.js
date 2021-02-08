@@ -36,16 +36,16 @@ function App() {
           <div className="app__mobile">
             {/* <div className="app__mobile-container"> */}
               <Switch>
-                <Route path="/sign-up">
+                <Route axact path="/sign-up">
                   <SignUp />
                 </Route>
-                <Route path="/sign-in">
+                <Route exact path="/sign-in">
                   <SignIn />
                 </Route>
-                <Route path="/user">
+                <Route axact path="/user">
                   <User />
                 </Route>
-                <Route path="/">
+                <Route exact path="/">
                   <Home />
                 </Route>
               </Switch>
