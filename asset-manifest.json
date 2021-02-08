@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sign-app/static/css/main.43ec29b3.chunk.css",
+    "main.js": "/sign-app/static/js/main.7afc671e.chunk.js",
+    "main.js.map": "/sign-app/static/js/main.7afc671e.chunk.js.map",
+    "runtime-main.js": "/sign-app/static/js/runtime-main.e3c18d26.js",
+    "runtime-main.js.map": "/sign-app/static/js/runtime-main.e3c18d26.js.map",
+    "static/js/2.a2b43e67.chunk.js": "/sign-app/static/js/2.a2b43e67.chunk.js",
+    "static/js/2.a2b43e67.chunk.js.map": "/sign-app/static/js/2.a2b43e67.chunk.js.map",
+    "static/js/3.e2b0d4fe.chunk.js": "/sign-app/static/js/3.e2b0d4fe.chunk.js",
+    "static/js/3.e2b0d4fe.chunk.js.map": "/sign-app/static/js/3.e2b0d4fe.chunk.js.map",
+    "index.html": "/sign-app/index.html",
+    "static/css/main.43ec29b3.chunk.css.map": "/sign-app/static/css/main.43ec29b3.chunk.css.map",
+    "static/js/2.a2b43e67.chunk.js.LICENSE.txt": "/sign-app/static/js/2.a2b43e67.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3c18d26.js",
+    "static/js/2.a2b43e67.chunk.js",
+    "static/css/main.43ec29b3.chunk.css",
+    "static/js/main.7afc671e.chunk.js"
+  ]
+}
