@@ -1,0 +1,19 @@
+body, h2 {
+  margin: 0;
+}
+
+.app {
+  height: 1024px;
+  background: #e5e5e5;
+
+  &__mobile {
+    // text-align: center;
+    background-color: #fff;
+    width: 302px;
+    padding: 24px;
+    height: 655px;
+    border-radius: 30px;
+    margin: auto;
+  }
+}
+

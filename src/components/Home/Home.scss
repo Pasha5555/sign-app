@@ -1,0 +1,69 @@
+.home {
+  height: 655px;
+  width: 302px;
+  background-color: #faf3f3;
+
+  &__header {
+    height: 60px;
+    width: 220px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    color: #181c43;
+    margin: auto;
+    padding-top: 63px;
+  }
+
+  &__text {
+    height: 40px;
+    width: 220px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #3e4462;
+    margin: 17px auto 0;
+  }
+
+  &__button {
+    margin-top: 27px;
+    cursor: pointer;
+
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--sign-up {
+      display: inline-block;
+      height: 48px;
+      width: 120px;
+      margin-right: 16px;
+      border: none;
+      border-radius: 50px;
+      background: #fff;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000000;
+    }
+
+    &--sign-in {
+      display: inline-block;
+      background-image: url(../Images/IconArrow.png);
+      background: #1e1a3e;
+      border: none;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      line-height: 8px;
+    }
+  }
+}
