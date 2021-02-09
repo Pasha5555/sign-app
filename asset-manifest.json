@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sign-app/static/css/main.9cd15ae1.chunk.css",
-    "main.js": "/sign-app/static/js/main.d7fce679.chunk.js",
-    "main.js.map": "/sign-app/static/js/main.d7fce679.chunk.js.map",
+    "main.js": "/sign-app/static/js/main.45cdfa5d.chunk.js",
+    "main.js.map": "/sign-app/static/js/main.45cdfa5d.chunk.js.map",
     "runtime-main.js": "/sign-app/static/js/runtime-main.1a75551e.js",
     "runtime-main.js.map": "/sign-app/static/js/runtime-main.1a75551e.js.map",
     "static/js/2.c8551fa5.chunk.js": "/sign-app/static/js/2.c8551fa5.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1a75551e.js",
     "static/js/2.c8551fa5.chunk.js",
     "static/css/main.9cd15ae1.chunk.css",
-    "static/js/main.d7fce679.chunk.js"
+    "static/js/main.45cdfa5d.chunk.js"
   ]
 }
