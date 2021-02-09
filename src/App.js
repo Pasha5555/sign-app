@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
+      <HashRouter>
         <div>
           {/* <nav>
             <ul>
@@ -56,7 +56,10 @@ function App() {
           </nav> */}
           <div className="app__mobile">
             <Switch>
-              <Route path="/sign-up">
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/sign-up">
                 <SignUp
                   addUser={addUser}
                   users={users}
@@ -67,7 +70,7 @@ function App() {
                   handleDisplayPassword={handleDisplayPassword}
                 />
               </Route>
-              <Route path="/sign-in">
+              <Route exact path="/sign-in">
                 <SignIn
                   users={users}
                   setEmail={mail => setSignInEmail(mail)}
@@ -78,18 +81,15 @@ function App() {
                   handleDisplayPassword={handleDisplayPassword}
                 />
               </Route>
-              <Route path="/user">
+              <Route exact path="/user">
                 <User
                   user={authUser || registrationUser}
                 />
               </Route>
-              <Route path="/">
-                <Home />
-              </Route>
             </Switch>
           </div>
         </div>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
