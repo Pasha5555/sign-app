@@ -36,6 +36,44 @@
     color: #1e1a3e;
     margin: auto;
   }
+
+  &__wrong-message {
+    height: 48px;
+    text-align: center;
+    width: 275px;
+    background: #FF6683;
+    border-radius: 50px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 48px;
+    color: #fff;
+    margin: 140px auto 0;
+  }
+
+  &__button-x {
+    position: absolute;
+    margin: 10px 10px;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__icon-eye {
+    position: absolute;
+    margin-top: -28px;
+    margin-left: 215px;
+    opacity: 0.6;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    background-color: transparent;
+  }
 }
 
 .form {
@@ -87,7 +125,12 @@
     line-height: 20px;
     text-align: center;
     color: #fff;
+    outline: none;
     cursor: pointer;
     margin: 39px auto;
+  }
+
+  &__wrong-fields {
+    background: #ffdae0;
   }
 }

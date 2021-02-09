@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
-} from "react-router-dom";
+} from 'react-router-dom';
 import './App.scss';
 
 import { Home } from './components/Home/Home';
@@ -13,11 +12,33 @@ import { SignIn } from './components/SignIn/SignIn';
 import { User } from './components/User/User';
 
 function App() {
+  const [users, setUsers] = useState([]);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [signInEmail, setSignInEmail] = useState('');
+  const [signInPassword, setSignInPassword] = useState('');
+
+  const addUser = (newUser) => {
+    setUsers(availableUsers => [...availableUsers, newUser]);
+  };
+
+  const handleDisplayPassword = (field, callback, state) => {
+    const passwordInput = document.querySelector(`#${field}`);
+
+    state ? passwordInput.type = 'password' : passwordInput.type = 'text';
+    callback(!state);
+  };
+
+  const registrationUser = users.find(user => user.email === email
+    && user.password === password);
+  const authUser = users.find(user => user.email === signInEmail
+    && user.password === signInPassword);
+
   return (
     <div className="app">
       <Router>
         <div>
-          <nav>
+          {/* <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -32,24 +53,40 @@ function App() {
                 <Link to="/user">User</Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
           <div className="app__mobile">
-            {/* <div className="app__mobile-container"> */}
-              <Switch>
-                <Route axact path="/sign-up">
-                  <SignUp />
-                </Route>
-                <Route exact path="/sign-in">
-                  <SignIn />
-                </Route>
-                <Route exact path="/user">
-                  <User />
-                </Route>
-                <Route exact path="/">
-                  <Home />
-                </Route>
-              </Switch>
-            {/* </div> */}
+            <Switch>
+              <Route exact path="/sign-up">
+                <SignUp
+                  addUser={addUser}
+                  users={users}
+                  setEmail={mail => setEmail(mail)}
+                  email={email}
+                  setPassword={pass => setPassword(pass)}
+                  password={password}
+                  handleDisplayPassword={handleDisplayPassword}
+                />
+              </Route>
+              <Route exact path="/sign-in">
+                <SignIn
+                  users={users}
+                  setEmail={mail => setSignInEmail(mail)}
+                  email={signInEmail}
+                  setPassword={pass => setSignInPassword(pass)}
+                  password={signInPassword}
+                  authUser={authUser}
+                  handleDisplayPassword={handleDisplayPassword}
+                />
+              </Route>
+              <Route exact path="/user">
+                <User
+                  user={authUser || registrationUser}
+                />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
           </div>
         </div>
       </Router>

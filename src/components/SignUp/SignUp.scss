@@ -91,6 +91,22 @@
       outline: none;
     }
   }
+
+  &__wrong-fields {
+    background: #ffdae0;
+  }
+
+  &__icon-eye {
+    position: absolute;
+    margin-top: -28px;
+    margin-left: 215px;
+    opacity: 0.6;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    background-color: transparent;
+  }
 }
 
 .error-message {
