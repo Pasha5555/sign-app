@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react';
 import classNames from 'classnames';
 import { Link, useHistory } from 'react-router-dom';
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 
 import './SignUp.scss';
 
@@ -224,4 +225,13 @@ export const SignUp = ({
       </Link>
     </div>
   );
+};
+
+SignUp.propTypes = {
+  addUser: PropTypes.func.isRequired,
+  setEmail: PropTypes.func.isRequired,
+  setPassword: PropTypes.func.isRequired,
+  handleDisplayPassword: PropTypes.func.isRequired,
+  email: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
 };
