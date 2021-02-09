@@ -56,7 +56,7 @@ function App() {
           </nav> */}
           <div className="app__mobile">
             <Switch>
-              <Route exact path="/sign-up">
+              <Route path="/sign-up">
                 <SignUp
                   addUser={addUser}
                   users={users}
@@ -67,7 +67,7 @@ function App() {
                   handleDisplayPassword={handleDisplayPassword}
                 />
               </Route>
-              <Route exact path="/sign-in">
+              <Route path="/sign-in">
                 <SignIn
                   users={users}
                   setEmail={mail => setSignInEmail(mail)}
@@ -78,7 +78,7 @@ function App() {
                   handleDisplayPassword={handleDisplayPassword}
                 />
               </Route>
-              <Route exact path="/user">
+              <Route path="/user">
                 <User
                   user={authUser || registrationUser}
                 />
