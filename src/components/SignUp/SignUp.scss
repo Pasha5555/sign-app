@@ -1,7 +1,9 @@
 .sign-up {
-  height: 655px;
-  width: 302px;
+  // height: 700px;
+  width: 320px;
   background-color: #faf3f3;
+  // margin: auto;
+  // border: 2px solid black;
 
   &__header {
     font-family: 'Inter', sans-serif;
@@ -107,6 +109,43 @@
     cursor:pointer;
     background-color: transparent;
   }
+
+  &__icon-question {
+    position: absolute;
+    margin-left: 225px;
+    width: 12px;
+    height: 12px;
+    margin-top: -25px;
+    cursor: pointer;
+  }
+
+  [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: relative;
+    background: #27273a;
+    height: 45px;
+    width: 184px;
+    right: 160px;
+    top: -80px;
+    border-radius: 8px;
+    box-shadow: 0px 5.44862px 13.6215px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0; 
+    transition: 0.5s;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #F3F3F3;
+  }
+
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    top: -65px;
+   }
 }
 
 .error-message {

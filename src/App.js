@@ -54,6 +54,7 @@ function App() {
               </li>
             </ul>
           </nav> */}
+          {/* <div className="app__mobile-container"> */}
           <div className="app__mobile">
             <Switch>
               <Route exact path="/">
@@ -88,6 +89,7 @@ function App() {
               </Route>
             </Switch>
           </div>
+          {/* </div> */}
         </div>
       </HashRouter>
     </div>

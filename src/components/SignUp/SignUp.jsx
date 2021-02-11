@@ -1,7 +1,8 @@
 import React, { useCallback, useState } from 'react';
 import classNames from 'classnames';
 import { Link, useHistory } from 'react-router-dom';
-import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
+import { FaRegEye, FaRegEyeSlash, FaQuestionCircle } from 'react-icons/fa';
+// import { VscTriangleDown } from 'react-icons/vsc';
 import PropTypes from 'prop-types';
 
 import './SignUp.scss';
@@ -144,6 +145,20 @@ export const SignUp = ({
         >
           Password
         </label>
+        <p
+          className="sign-up__icon-question"
+          data-tooltip="Password must contain 8+ symbols,
+           1 special and 2 capital letters"
+          // onFocus={<VscTriangleDown />}
+        >
+          <FaQuestionCircle style={{
+            color: 'grey',
+            height: '12px',
+            width: '12px',
+            opacity: 0.6,
+          }}
+          />
+        </p>
         <input
           type="password"
           className={classNames('sign-up__form-inputs', {
