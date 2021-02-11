@@ -6,18 +6,18 @@
   }
 
   &__text-sign-up {
-    @include pageFooterText
+    @include pageFooterText;
   }
 
   &__link-sign-up {
-    @include pageFooterLink
+    @include pageFooterLink;
   }
 
   &__wrong-message {
     height: 58px;
     text-align: center;
     width: 370px;
-    background: #FF6683;
+    background: #ff6683;
     border-radius: 50px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -39,7 +39,7 @@
   }
 
   &__icon-eye {
-    @include iconEye
+    @include iconEye;
   }
 }
 
@@ -47,15 +47,15 @@
   @include form(380px);
 
   &__labels {
-    @include formLabel
+    @include formLabel;
   }
 
   &__inputs {
-    @include formInput
+    @include formInput;
   }
 
   &__submit {
-    @include formButton
+    @include formButton;
   }
 
   &__wrong-fields {

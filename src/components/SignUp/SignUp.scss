@@ -8,22 +8,22 @@
   }
 
   &__text-sign-in {
-    @include pageFooterText
+    @include pageFooterText;
   }
 
   &__link-sign-in {
-    @include pageFooterLink 
+    @include pageFooterLink; 
   }
 
   &__form {
     @include form(580px);
   
     &-labels {
-      @include formLabel
+      @include formLabel;
     }
   
     &-inputs {
-      @include formInput
+      @include formInput;
     }
   
     &-submit {
@@ -36,7 +36,7 @@
   }
 
   &__icon-eye {
-    @include iconEye
+    @include iconEye;
   }
 
   &__icon-question {
@@ -64,7 +64,7 @@
     line-height: 14px;
     display: none;
     letter-spacing: -0.4px;
-    color: #F3F3F3;
+    color: #f3f3f3;
   }
 
   [data-tooltip]:hover::after {
@@ -82,5 +82,5 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 28px;
-  color: #FF6683;
+  color: #ff6683;
 }
