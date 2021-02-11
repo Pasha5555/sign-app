@@ -38,23 +38,6 @@ function App() {
     <div className="app">
       <HashRouter>
         <div>
-          {/* <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/sign-up">Sign Up</Link>
-              </li>
-              <li>
-                <Link to="/sign-in">Sign In</Link>
-              </li>
-              <li>
-                <Link to="/user">User</Link>
-              </li>
-            </ul>
-          </nav> */}
-          {/* <div className="app__mobile-container"> */}
           <div className="app__mobile">
             <Switch>
               <Route exact path="/">
@@ -89,7 +72,6 @@ function App() {
               </Route>
             </Switch>
           </div>
-          {/* </div> */}
         </div>
       </HashRouter>
     </div>

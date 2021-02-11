@@ -1,40 +1,16 @@
-.sign-in {
-  // height: 655px;
-  // width: 320px;
-  // background-color: #faf3f3;
+@import "../CommonStyles/mixins.scss";
 
+.sign-in {
   &__header {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #181c43;
-    padding-top: 100px;
-    margin-bottom: 40px;
+    @include pageHeaders;
   }
 
   &__text-sign-up {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: #1e1a3e;
-    margin: 45px auto 10px;
+    @include pageFooterText
   }
 
   &__link-sign-up {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: #1e1a3e;
-    margin: auto;
+    @include pageFooterLink
   }
 
   &__wrong-message {
@@ -43,7 +19,6 @@
     width: 370px;
     background: #FF6683;
     border-radius: 50px;
-    font-weight: 400;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -64,70 +39,23 @@
   }
 
   &__icon-eye {
-    position: absolute;
-    margin-top: -35px;
-    margin-left: 280px;
-    opacity: 0.6;
-    font-size: 22px;
-    border: none;
-    outline: none;
-    cursor:pointer;
-    background-color: transparent;
+    @include iconEye
   }
 }
 
 .form {
-  height: 380px;
-  width: 370px;
-  border-radius: 40px;
-  background: #fff;
-  border-radius: 40px;
-  margin: auto;
+  @include form(380px);
 
   &__labels {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 20px;
-    color: rgba(0, 0, 0, 0.8);
-    margin-left: 55px;
-    margin-bottom: 5px;
-    padding-top: 35px;
+    @include formLabel
   }
 
   &__inputs {
-    display: block;
-    height: 44px;
-    width: 270px;
-    border-radius: 50px;
-    background: #f3f3fa;
-    border-radius: 50px;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 20px;
-    color: rgba(0, 0, 0, 0.8);
-    border: none;
-    margin: auto;
-    padding-left: 18px;
-    outline: none;
+    @include formInput
   }
 
   &__submit {
-    display: block;
-    height: 58px;
-    width: 288px;
-    background: #1E1A3E;
-    border-radius: 50px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    margin: 50px auto;
-    outline: none;
+    @include formButton
   }
 
   &__wrong-fields {
