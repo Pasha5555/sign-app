@@ -153,8 +153,8 @@ export const SignUp = ({
         >
           <FaQuestionCircle style={{
             color: 'grey',
-            height: '12px',
-            width: '12px',
+            // height: '12px',
+            // width: '12px',
             opacity: 0.6,
           }}
           />
@@ -183,7 +183,7 @@ export const SignUp = ({
           }}
         >
           {
-            showPassword ? <FaRegEye /> : <FaRegEyeSlash />
+            showPassword ? <FaRegEyeSlash /> : <FaRegEye />
           }
         </button>
         {
@@ -194,7 +194,7 @@ export const SignUp = ({
           htmlFor="repeatPassword"
           className="sign-up__form-labels"
         >
-          Password
+          Repeat password
         </label>
         <input
           type="password"
@@ -220,7 +220,7 @@ export const SignUp = ({
           }}
         >
           {
-            showRepeatPassword ? <FaRegEye /> : <FaRegEyeSlash />
+            showRepeatPassword ? <FaRegEyeSlash /> : <FaRegEye />
           }
         </button>
         {
@@ -230,10 +230,10 @@ export const SignUp = ({
             </span>
           )
         }
-        <button type="submit" className="form__submit">Sign Up</button>
+        <button type="submit" className="sign-up__form-submit">Sign Up</button>
       </form>
       <p className="sign-up__text-sign-in">
-        Don’t have an account yet?
+        Already have an account?
       </p>
       <Link to="/sign-in">
         <p className="sign-up__link-sign-in">Sign In</p>

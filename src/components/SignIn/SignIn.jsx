@@ -90,7 +90,7 @@ export const SignIn = ({
           }}
         >
           {
-            showPassword ? <FaRegEye /> : <FaRegEyeSlash />
+            showPassword ? <FaRegEyeSlash /> : <FaRegEye />
           }
         </button>
 

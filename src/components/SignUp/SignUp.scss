@@ -1,38 +1,39 @@
 .sign-up {
   // height: 700px;
-  width: 320px;
-  background-color: #faf3f3;
+  // width: 320px;
+  // background-color: #faf3f3;
+  // border: 2px solid black;
   // margin: auto;
   // border: 2px solid black;
 
   &__header {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #181c43;
-    padding-top: 63px;
-    margin-bottom: 20px;
+    padding-top: 100px;
+    margin-bottom: 40px;
   }
 
   &__text-sign-in {
     display: block;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 20px;
     text-align: center;
     color: #1e1a3e;
-    margin: 25px auto 0;
+    margin: 45px auto 10px;
   }
 
   &__link-sign-in {
     display: block;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 20px;
     text-align: center;
     color: #1e1a3e;
@@ -40,34 +41,35 @@
   }
 
   &__form {
-    height: 440px;
-    width: 275px;
+    height: 580px;
+    width: 370px;
     border-radius: 40px;
     background: #fff;
     border-radius: 40px;
-    margin: auto;
+    margin: 30px auto 0;
     outline: none;
   
     &-labels {
       display: block;
       font-family: 'Inter', sans-serif;
       font-weight: 600;
-      font-size: 12px;
+      font-size: 17px;
       line-height: 20px;
       color: rgba(0, 0, 0, 0.8);
-      margin-left: 40px;
-      padding-top: 26px;
+      margin-left: 55px;
+      margin-bottom: 5px;
+      padding-top: 35px;
     }
   
     &-inputs {
       display: block;
-      height: 34px;
-      width: 210px;
+      height: 44px;
+      width: 270px;
       border-radius: 50px;
       background: #f3f3fa;
       border-radius: 50px;
       font-family: 'Inter', sans-serif;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 20px;
       color: rgba(0, 0, 0, 0.8);
       border: none;
@@ -76,20 +78,20 @@
       outline: none;
     }
   
-    &__submit {
+    &-submit {
       display: block;
-      height: 48px;
-      width: 229px;
+      height: 58px;
+      width: 288px;
       background: #1E1A3E;
       border-radius: 50px;
       font-family: 'Inter', sans-serif;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 20px;
       text-align: center;
       color: #fff;
       cursor: pointer;
-      margin: 39px auto;
+      margin: 50px auto;
       outline: none;
     }
   }
@@ -100,10 +102,10 @@
 
   &__icon-eye {
     position: absolute;
-    margin-top: -28px;
-    margin-left: 215px;
+    margin-top: -35px;
+    margin-left: 280px;
     opacity: 0.6;
-    font-size: 18px;
+    font-size: 22px;
     border: none;
     outline: none;
     cursor:pointer;
@@ -112,10 +114,11 @@
 
   &__icon-question {
     position: absolute;
-    margin-left: 225px;
-    width: 12px;
-    height: 12px;
-    margin-top: -25px;
+    margin-left: 290px;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    margin-top: -28px;
     cursor: pointer;
   }
 
@@ -123,37 +126,34 @@
     content: attr(data-tooltip);
     position: relative;
     background: #27273a;
-    height: 45px;
-    width: 184px;
-    right: 160px;
-    top: -80px;
+    height: 55px;
+    width: 220px;
+    right: 190px;
     border-radius: 8px;
-    box-shadow: 0px 5.44862px 13.6215px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    opacity: 0; 
-    transition: 0.5s;
     font-family: 'Inter', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 14px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    display: none;
     letter-spacing: -0.4px;
     color: #F3F3F3;
   }
 
   [data-tooltip]:hover::after {
-    opacity: 1;
-    top: -65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    top: -80px;
    }
 }
 
 .error-message {
   position: absolute;
-  margin-left: 40px;
+  margin-left: 55px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 28px;
   color: #FF6683;
 }

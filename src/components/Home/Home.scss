@@ -1,37 +1,37 @@
 .home {
-  height: 655px;
-  width: 320px;
-  background-color: #faf3f3;
+  // height: 655px;
+  // width: 320px;
+  // background-color: #faf3f3;
 
   &__header {
     height: 60px;
-    width: 220px;
+    width: 300px;
     text-align: center;
     letter-spacing: 0.02em;
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 40px;
     color: #181c43;
     margin: auto;
-    padding-top: 63px;
+    padding-top: 100px;
   }
 
   &__text {
     height: 40px;
-    width: 220px;
+    width: 300px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #3e4462;
-    margin: 17px auto 0;
+    margin: 50px auto 0;
   }
 
   &__button {
-    margin-top: 27px;
+    margin-top: 60px;
     outline: none;
     cursor: pointer;
 
@@ -42,16 +42,16 @@
 
     &--sign-up {
       display: inline-block;
-      height: 48px;
-      width: 120px;
-      margin-right: 16px;
+      height: 58px;
+      width: 150px;
+      margin-right: 25px;
       border: none;
       border-radius: 50px;
       background: #fff;
       border-radius: 50px;
       font-family: 'Inter', sans-serif;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 20px;
       color: #000000;
     }
@@ -61,8 +61,8 @@
       background-image: url(../Images/IconArrow.png);
       background: #1e1a3e;
       border: none;
-      width: 48px;
-      height: 48px;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
       line-height: 8px;
     }
