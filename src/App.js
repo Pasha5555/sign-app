@@ -65,11 +65,16 @@ function App() {
                   handleDisplayPassword={handleDisplayPassword}
                 />
               </Route>
-              <Route exact path="/user">
-                <User
-                  user={authUser || registrationUser}
-                />
-              </Route>
+              {
+                (authUser || registrationUser)
+                  && (
+                    <Route exact path="/user">
+                      <User
+                        user={authUser || registrationUser}
+                      />
+                    </Route>
+                  )
+              }
             </Switch>
           </div>
         </div>
