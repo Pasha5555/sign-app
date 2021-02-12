@@ -1,0 +1,113 @@
+@mixin pageHeaders {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #181c43;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+
+@mixin pageFooterText {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #1e1a3e;
+  margin: 45px auto 10px;
+}
+
+@mixin pageFooterLink {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #1e1a3e;
+  margin: auto;
+
+  &:hover {
+    color: rgb(35, 35, 194);
+  }
+}
+
+@mixin form($height) {
+  height: $height;
+  width: 370px;
+  border-radius: 40px;
+  background: #fff;
+  margin: 30px auto 0;
+  outline: none;
+}
+
+@mixin formLabel {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: 55px;
+  margin-bottom: 5px;
+  padding-top: 35px;
+}
+
+@mixin formInput {
+  display: block;
+  height: 44px;
+  width: 270px;
+  border-radius: 50px;
+  background: #f3f3fa;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  margin: auto;
+  padding-left: 18px;
+  outline: none;
+}
+
+@mixin formButton {
+  display: block;
+  height: 58px;
+  width: 288px;
+  background: #1e1a3e;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin: 50px auto;
+  outline: none;
+  background-image: linear-gradient(45deg, rgb(33, 39, 109) 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background-position 0.5s ease-in-out;
+
+  &:hover {
+    background-position: 0;
+    color: #fff;
+  }
+}
+
+@mixin iconEye {
+  position: absolute;
+    margin-top: -35px;
+    margin-left: 280px;
+    opacity: 0.6;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor:pointer;
+}

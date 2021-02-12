@@ -2,18 +2,16 @@ body, h2 {
   margin: 0;
 }
 
-.app {
-  height: 1024px;
-  background: #e5e5e5;
+html {
+  background-color: #faf3f3;
+}
 
+.app {
   &__mobile {
-    // text-align: center;
-    background-color: #fff;
-    width: 302px;
-    padding: 24px;
-    height: 655px;
-    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 540px;
     margin: auto;
   }
 }
-
